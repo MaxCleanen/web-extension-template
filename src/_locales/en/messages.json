@@ -1,0 +1,10 @@
+{
+  "name": {
+    "message": "Raiffeisen extension template",
+    "description": "extension name"
+  },
+  "description": {
+    "message": "Brand new awesome extension from Raiffeisen Bank!",
+    "description": "extension description"
+  }
+}
