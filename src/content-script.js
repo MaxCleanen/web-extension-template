@@ -27,7 +27,6 @@ text.addEventListener("click", () => {
 });
 
 chrome.runtime.onMessage.addListener((req, info, cb) => {
-  debugger;
   if (req.action === "copy-all") {
     alert("copy-all");
     cb("command run");

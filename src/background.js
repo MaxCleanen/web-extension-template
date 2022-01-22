@@ -1,4 +1,4 @@
-console.log("heelo from bg");
+console.log("Background started!");
 
 function setContent(content) {
   chrome.storage.local.set({ content: content }, function () {
@@ -36,7 +36,6 @@ chrome.runtime.onMessage.addListener((req, info, cb) => {
 async function getCurrentTabId() {
   let queryOptions = { active: true, currentWindow: true };
   let [tab] = await chrome.tabs.query(queryOptions);
-  console.log("tab.id", tab.id);
   return tab.id;
 }
 
